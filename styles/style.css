@@ -1,0 +1,398 @@
+/* Variables CSS para colores */
+:root {
+    --primary-purple: #640fdb; /* purple-600 */
+    --secondary-purple: #8d55d1; /* purple-400 */
+    --text-gray-dark: #000000; /* gray-900 */
+    --text-gray-medium: #4b5563; /* gray-700 */
+    --text-gray-light: #6b7280; /* gray-600 */
+    --bg-gray-light: #f9fafb; /* gray-50 */
+    --border-gray: #d1d5db; /* gray-300 */
+    --green-whatsapp: #02ab13; /* WhatsApp green */
+    --green-whatsapp-hover: #3fc36f;
+
+    /* Nuevas variables para el fondo animado */
+    --hero-bg-color-start: #54247c; /* purple-600 */
+    --hero-bg-color-end: #28229e;   /* purple-400 */
+    --hero-particle-color: rgba(255, 255, 255, 0.1); /* Partículas blancas semitransparentes */
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave para anclas */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    color: var(--text-gray-medium); /* Color de texto base */
+}
+.titulo,.tit,.ticon{
+    color: white;
+    text-shadow: 0 0 4dvi rgba(255, 255, 255, 0.8),
+                 0 0 8px rgba(106, 0, 255, 0.697),
+                 0 0 10px rgba(0, 0, 255, 0.5);
+}
+.contac{
+    color: white;
+    text-shadow: 0 0 10px rgba(106, 0, 255, 0.6),
+                 0 0 10px rgba(0, 0, 255, 0.222);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-gray-dark); /* Color más oscuro para títulos */
+    line-height: 1.2;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8),
+                 0 0 10px rgba(128, 0, 255, 0.286),
+                 0 0 20px rgba(0, 0, 255, 0.163);
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 0; /* Estado inicial para la animación */
+    transform: translateY(20px); /* Estado inicial para la animación */
+}
+
+.product-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card:hover {
+    transform: translateY(-8px); /* Más pronunciado */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Sombra más grande */
+}
+
+.search-container {
+    transition: all 0.3s ease;
+}
+
+.search-container.expanded {
+    width: 100%;
+}
+
+.category-filter {
+    transition: all 0.3s ease;
+}
+
+.category-filter:hover {
+    transform: scale(1.05) translateY(-2px); /* Más pronunciado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Hero Section Mejorado --- */
+.hero-gradient {
+    position: relative; /* Necesario para posicionar las partículas */
+    overflow: hidden; /* Para que las partículas no se salgan */
+    background: linear-gradient(135deg, var(--hero-bg-color-start) 0%, var(--hero-bg-color-end) 100%);
+}
+
+.hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, var(--hero-particle-color) 1px, transparent 1%) 0 0 / 20px 20px,
+        radial-gradient(circle at 80% 20%, var(--hero-particle-color) 1px, transparent 1%) 10px 10px / 20px 20px;
+    animation: moveParticles 60s linear infinite; /* Animación de movimiento lento */
+    opacity: 0.7; /* Suavizar las partículas */
+    z-index: 1; /* Asegurar que esté debajo del contenido */
+}
+
+.hero-gradient > .container {
+    position: relative; /* Asegurar que el contenido esté encima de las partículas */
+    z-index: 2;
+}
+
+@keyframes moveParticles {
+    from {
+        background-position: 0 0, 10px 10px;
+    }
+    to {
+        background-position: 1000px 1000px, 1010px 1010px; /* Mover las partículas */
+    }
+}
+
+/* Animaciones para el Hero Section */
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-fade-in-up.delay-400 {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#customReminderModal {
+    z-index: 9999 !important; /* Muy alto para que esté encima */
+}
+
+/* Estilos para los modales */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    position: relative; /* Importante para posicionar el botón de cierre */
+    background-color: rgba(255, 255, 255, 0.98); /* Ligeramente más opaco */
+    padding: 2rem;
+    border-radius: 0.75rem;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh; /* Limita la altura del modal al 90% del viewport */
+    overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+}
+
+.modal.open .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-gray-medium);
+    z-index: 1100;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 2px 8px; 
+    border-radius: 50%; 
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: red;
+    background-color: rgba(128, 128, 128, 0.3);
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.5);
+    outline: none;
+}
+
+/* Estilos para las miniaturas dentro del modal */
+.modal-thumbnails-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.modal-thumbnail-list {
+    display: flex;
+    gap: 8px;
+    transition: transform 0.3s ease-in-out;
+    padding: 5px 0;
+    flex-shrink: 0; 
+}
+
+.modal-thumbnail-item {
+    width: var(--thumb-width, 80px);
+    height: var(--thumb-width, 80px);
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.modal-thumbnail-item:hover,
+.modal-thumbnail-item.active {
+    border-color: var(--primary-purple);
+    transform: scale(1.05);
+}
+
+.modal-thumb-arrow {
+    background-color: var(--secondary-purple);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.modal-thumb-arrow:hover {
+    background-color: var(--primary-purple);
+}
+
+.modal-thumb-arrow.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Estilos para el botón de WhatsApp */
+#contactProductBtn, #contactItemBtn {
+    background-color: var(--green-whatsapp);
+}
+
+#contactProductBtn:hover, #contactItemBtn:hover {
+    background-color: var(--green-whatsapp-hover);
+}
+
+/* Estilos para el botón "Ver Curso" */
+#viewCourseBtn {
+    background-color: var(--primary-purple);
+}
+
+#viewCourseBtn:hover {
+    background-color: var(--secondary-purple);
+}
+
+/* Estilos para el botón de cargar más */
+#loadMore {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#loadMore:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la descripción detallada en los modales */
+.detailed-description {
+    white-space: pre-line; /* Respeta los saltos de línea y espacios del texto original */
+    font-size: 1rem; /* Tamaño de fuente base */
+    color: var(--text-gray-medium); /* Color de texto */
+    margin-bottom: 1rem; /* Espacio inferior */
+    line-height: 1.7; /* Mayor interlineado para mejor legibilidad */
+    text-align: justify; /* Justifica el texto para una apariencia más limpia */
+}
+
+/* Mejorar la apariencia de las listas dentro de detailed-description */
+.detailed-description ul {
+    list-style: none; /* Eliminar viñetas por defecto */
+    padding-left: 0; /* Eliminar padding por defecto */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detailed-description ul li {
+    position: relative;
+    padding-left: 1.5rem; /* Espacio para el icono personalizado */
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.detailed-description ul li::before {
+    content: '\f00c'; /* Icono de checkmark de Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Asegúrate de que Font Awesome esté cargado */
+    font-weight: 900; /* Para iconos sólidos */
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: var(--green-whatsapp); /* Color verde para el checkmark */
+    font-size: 0.9rem;
+}
+
+.detailed-description strong,
+.detailed-description b {
+    color: var(--text-gray-dark); /* Resalta el texto en negrita */
+    font-weight: 700; /* Asegura que sea negrita */
+}
+
+/* Mejorar la presentación de las imágenes principales en los modales */
+#modalProductMainImage,
+#modalItemMainImage {
+    border: 1px solid var(--border-gray); /* Borde sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    object-fit: contain; /* Asegura que la imagen completa sea visible */
+    background-color: #fff; /* Fondo blanco para imágenes con transparencia */
+    padding: 0.5rem; /* Pequeño padding interno */
+}
+
+/* Ajustes para el texto del precio en las tarjetas de producto */
+.product-card .font-bold {
+    font-weight: 700; /* Asegura que el precio sea realmente negrita */
+    letter-spacing: -0.02em; /* Ligeramente más compacto */
+}
+
+/* Ajustes para los títulos de los productos en las tarjetas */
+.product-card h3 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* semibold */
+    color: var(--text-gray-dark);
+    margin-bottom: 0.5rem;
+}
+
+/* Ajustes para la descripción corta en las tarjetas */
+.product-card p.line-clamp-2 {
+    font-size: 0.875rem; /* text-sm */
+    color: var(--text-gray-medium);
+    margin-bottom: 1rem;
+}
+
+/* Estilos para las estrellas de calificación */
+#modalItemRating .fas, #modalItemRating .far {
+    margin-right: 0.2rem;
+}
+#modalItemDescription, #modalProductDescription {
+    white-space: pre-line; /* Respeta saltos de línea simples */
+    margin-bottom: 0.5rem; /* Ajusta el espacio entre párrafos */
+    line-height: 1.4; /* Ajusta el interlineado */
+}
+
+
+/* Ajustes para el texto del footer */
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--primary-purple); /* Cambia el color al pasar el ratón */
+}
+
+footer h4 {
+    color: #fff; /* Títulos del footer en blanco */
+}
+
+footer ul li {
+    color: var(--text-gray-light); /* Texto de lista en gris claro */
+}
+
+footer ul li i {
+    color: var(--secondary-purple); /* Iconos de lista en púrpura secundario */
+}
