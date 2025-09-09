@@ -1,14 +1,14 @@
 /* Variables CSS para colores */
 :root {
-    --primary-purple: #640fdb; /* purple-600 */
-    --secondary-purple: #8d55d1; /* purple-400 */
+    --primary-purple: #772fd0; /* purple-600 */
+    --secondary-purple: #2c085d; /* purple-400 */
     --text-gray-dark: #000000; /* gray-900 */
     --text-gray-medium: #4b5563; /* gray-700 */
     --text-gray-light: #6b7280; /* gray-600 */
     --bg-gray-light: #f9fafb; /* gray-50 */
     --border-gray: #d1d5db; /* gray-300 */
     --green-whatsapp: #02ab13; /* WhatsApp green */
-    --green-whatsapp-hover: #3fc36f;
+    --green-whatsapp-hover: #0f5228;
 
     /* Nuevas variables para el fondo animado */
     --hero-bg-color-start: #54247c; /* purple-600 */
@@ -41,9 +41,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
     color: var(--text-gray-dark); /* Color más oscuro para títulos */
     line-height: 1.2;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8),
-                 0 0 10px rgba(128, 0, 255, 0.286),
-                 0 0 20px rgba(0, 0, 255, 0.163);
+    text-shadow: 0 0 10px rgba(128, 0, 255, 0.286),
+                 0 0 10px rgba(0, 0, 255, 0.163);
 }
 
 .product-card {
@@ -188,21 +187,22 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 2rem;
+    font-size: 1.50rem;
     cursor: pointer;
     color: var(--text-gray-medium);
     z-index: 1100;
     transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     padding: 2px 8px; 
-    border-radius: 50%; 
+    border-radius: 100%; 
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     color: red;
-    background-color: rgba(128, 128, 128, 0.3);
+    background-color: rgba(200, 0, 255, 0.162);
     box-shadow: 0 0 8px rgba(128, 128, 128, 0.5);
     outline: none;
+    font-size: 1.60rem;
 }
 
 /* Estilos para las miniaturas dentro del modal */
@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-thumb-arrow {
-    background-color: var(--secondary-purple);
+    background-color: var(--primary-purple);
     color: white;
     border: none;
     border-radius: 50%;
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-thumb-arrow:hover {
-    background-color: var(--primary-purple);
+    background-color: var(--secondary-purple);
 }
 
 .modal-thumb-arrow.hidden {

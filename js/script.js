@@ -7,7 +7,7 @@ const products = [
         precio: 180000, // Precio o
         descuento: 153900, // Descuento
         category: "tecnologia",
-        image: "img/tecnologia/jbl/jbl1.jpg",
+        image: "img/tecnologia/jbl/jbl1.webp",
         description: "Sonido potente, Bluetooth, tarjeta SD, radio FM, powerbank",
         detailedDescription: `Sonido envolvente, hecho para ser el más potente. Boombox (genérico) ofrece sonido monstruoso junto con el más duro golpe bajo.
 
@@ -27,18 +27,18 @@ Ideal para llevar a la playa o cualquier paseo, eventos o para un regalo familia
 - Potencia de sonido: 40W
 - Peso del producto: 1200g`,
         images: [
-            "img/tecnologia/jbl/jbl1.jpg",
-            "img/tecnologia/jbl/jbl1.1.jpg",
-            "img/tecnologia/jbl/jbl1.2.jpg",
-            "img/tecnologia/jbl/jbl2.jpg",
-            "img/tecnologia/jbl/jbl3.jpg",
-            "img/tecnologia/jbl/jbl3.1.jpg",
-            "img/tecnologia/jbl/jbl4.jpg",
-            "img/tecnologia/jbl/jbl4esp.jpg",
-            "img/tecnologia/jbl/jbl5.jpg",
-            "img/tecnologia/jbl/jbl6.jpg",
-            "img/tecnologia/jbl/jbl6.2.jpg",
-            "img/tecnologia/jbl/jbl6.3.jpg"
+            "img/tecnologia/jbl/jbl1.webp",
+            "img/tecnologia/jbl/jbl1.1.webp",
+            "img/tecnologia/jbl/jbl1.2.webp",
+            "img/tecnologia/jbl/jbl2.webp",
+            "img/tecnologia/jbl/jbl3.webp",
+            "img/tecnologia/jbl/jbl3.1.webp",
+            "img/tecnologia/jbl/jbl4.webp",
+            "img/tecnologia/jbl/jbl4esp.webp",
+            "img/tecnologia/jbl/jbl5.webp",
+            "img/tecnologia/jbl/jbl6.webp",
+            "img/tecnologia/jbl/jbl6.2.webp",
+            "img/tecnologia/jbl/jbl6.3.webp"
         ]
     },
     {
@@ -47,7 +47,7 @@ Ideal para llevar a la playa o cualquier paseo, eventos o para un regalo familia
         precio: 75000,
         descuento: 64900,
         category: "tecnologia",
-        image: "img/tecnologia/aud.inal/negro1.jpg",
+        image: "img/tecnologia/aud.inal/negro1.webp",
         description: "Estéreo Bilateral,función de llamada, control de voz, soporte para música, Conexión multipunto, inducción de uso. ",
         detailedDescription:
             `CARGA RÁPIDA, batería de polímero de 400mAh, chip de protección integrado, hasta 12 horas de reproducción, puede cumplir con los viajes de larga distancia, deja que la música te acompañe todo el camino.
@@ -66,11 +66,11 @@ Ideal para llevar a la playa o cualquier paseo, eventos o para un regalo familia
 
 Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x Manual de instrucciones`,
         images: [
-            "img/tecnologia/aud.inal/negro1.jpg",
-            "img/tecnologia/aud.inal/rosa1.jpg",
-            "img/tecnologia/aud.inal/rosa2.jpg",
-            "img/tecnologia/aud.inal/azul1.jpg",
-            "img/tecnologia/aud.inal/azul2.jpg",
+            "img/tecnologia/aud.inal/negro1.webp",
+            "img/tecnologia/aud.inal/rosa1.webp",
+            "img/tecnologia/aud.inal/rosa2.webp",
+            "img/tecnologia/aud.inal/azul1.webp",
+            "img/tecnologia/aud.inal/azul2.webp",
             "img/tecnologia/aud.inal/negrotodo.webp"
         ]
     },
@@ -80,7 +80,7 @@ Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x
         precio: 130000,
         descuento: 110900,
         category: "tecnologia",
-        image: "img/tecnologia/cierra/cierra1.jpeg",
+        image: "img/tecnologia/cierra/cierra1.webp",
         description: "Sierra de 48v ligera y facil de usar para jardineria y carpinteria",
         detailedDescription:
             `Sierra Eléctrica Portátil 48V, la herramienta para jardinería y carpintería. ¡Ligera, potente y fácil de usar en cualquier lugar!
@@ -92,12 +92,12 @@ Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x
 -Cargador de batería incluido.
 -Tamaño compacto, ideal para trabajos en altura o espacios reducidos.`,
         images: [
-            "img/tecnologia/cierra/cierra1.jpeg",
-            "img/tecnologia/cierra/cierra2.jpeg",
-            "img/tecnologia/cierra/cierra3.jpeg",
-            "img/tecnologia/cierra/cierra4.jpeg",
-            "img/tecnologia/cierra/cierra5.jpeg",
-            "img/tecnologia/cierra/cierra6.jpeg"
+            "img/tecnologia/cierra/cierra1.webp",
+            "img/tecnologia/cierra/cierra2.webp",
+            "img/tecnologia/cierra/cierra3.webp",
+            "img/tecnologia/cierra/cierra4.webp",
+            "img/tecnologia/cierra/cierra5.webp",
+            "img/tecnologia/cierra/cierra6.webp"
         ]
     },
     {
@@ -106,7 +106,7 @@ Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x
         precio: 70000,
         descuento: 62990,
         category: "tecnologia",
-        image: "img/tecnologia/soporte/sopo1.jpeg",
+        image: "img/tecnologia/soporte/sopo1.webp",
         description: "Soporte ajustable con ventilación incluida",
         detailedDescription: `Soporte para laptop diseñado para ofrecerte una experiencia visual completamente ergonómica.
     Eleva la pantalla a una altura adecuada, ayuda a evitar molestias en el cuello por mirar hacia abajo y reduce la fatiga visual causada por estar demasiado cerca de la pantalla.,
@@ -119,11 +119,11 @@ Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x
 -Altura y ángulo ajustables
     `,
         images: [
-            "img/tecnologia/soporte/sopo1.jpeg",
-            "img/tecnologia/soporte/sopo2.jpeg",
-            "img/tecnologia/soporte/sopo3.jpeg",
-            "img/tecnologia/soporte/sopo4.jpeg",
-            "img/tecnologia/soporte/sopo5.jpeg"
+            "img/tecnologia/soporte/sopo1.webp",
+            "img/tecnologia/soporte/sopo2.webp",
+            "img/tecnologia/soporte/sopo3.webp",
+            "img/tecnologia/soporte/sopo4.webp",
+            "img/tecnologia/soporte/sopo5.webp"
         ]
     },
     {
@@ -168,9 +168,9 @@ Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x
         `,
         images: [
             "img/tecnologia/TwsM25/tws2.webp",
-            "img/tecnologia/TwsM25/tws1.png",
+            "img/tecnologia/TwsM25/tws1.webp",
             "img/tecnologia/TwsM25/tws3.webp",
-            "img/tecnologia/TwsM25/tws4.png",
+            "img/tecnologia/TwsM25/tws4.webp",
             "img/tecnologia/TwsM25/tws5.webp"
         ]
     },
@@ -180,7 +180,7 @@ Incluye: 1x Auriculares estéreo inalámbricos / 1x cable de carga TYPE-C / / 1x
         precio: 90000,
         descuento: 79900,
         category: "tecnologia",
-        image: "img/tecnologia/intercomunicador/intercomunicador1.png",
+        image: "img/tecnologia/intercomunicador/intercomunicador1.webp",
         description: "Intercomunicador Bt12 Auriculares Casco Bluetooh, tecnología Bluetooth 5.0, garantiza una conexión estable y rápida con otros dispositivos.",
         detailedDescription: `Intercomunicador Bt12 Auriculares Casco Bluetooh, tecnología Bluetooth 5.0, garantiza una conexión estable y rápida con otros dispositivos.
     
@@ -193,8 +193,8 @@ Calidad de Sonido: La calidad HiFi es notable, con agudos claros y graves profun
 -Es pequeño, ligero y fácil de llevar.
 -Impermeable.`,
         images: [
-            "img/tecnologia/intercomunicador/intercomunicador1.png",
-            "img/tecnologia/intercomunicador/intercomunicador2.png",
+            "img/tecnologia/intercomunicador/intercomunicador1.webp",
+            "img/tecnologia/intercomunicador/intercomunicador2.webp",
             "img/tecnologia/intercomunicador/intercomunicador3.webp",
             "img/tecnologia/intercomunicador/intercomunicador4.webp",
             "img/tecnologia/intercomunicador/intercomunicador5.webp"
@@ -314,7 +314,7 @@ La máquina Adopta un motor silencioso y un motor de baja frecuencia, lo que red
         precio: 180000,
         descuento: 149900,
         category: "hogar",
-        image: "img/hogar/olla/olla1.jpg",
+        image: "img/hogar/olla/olla1.webp",
         description: "Este set incluye 5 ollas con tapas de vidrio templado.",
         detailedDescription: `Este set incluye 5 ollas con tapas de vidrio templado, diseñadas para resistir altas temperaturas y garantizar una cocción uniforme. Su fabricación en acero inoxidable resistente a la corrosión asegura durabilidad, fácil limpieza y un acabado elegante que realza cualquier cocina.
 
@@ -326,14 +326,14 @@ Las asas ergonómicas proporcionan un agarre seguro y cómodo, mientras que las 
 -Rosado
 `,
         images: [
-            "img/hogar/olla/olla1.jpg",
-            "img/hogar/olla/olla2.jpg",
-            "img/hogar/olla/olla3.jpg",
-            "img/hogar/olla/olla4.jpg",
-            "img/hogar/olla/olla5.jpg",
-            "img/hogar/olla/olla6.jpg",
-            "img/hogar/olla/olla7.jpg",
-            "img/hogar/olla/olla8.jpg"
+            "img/hogar/olla/olla1.webp",
+            "img/hogar/olla/olla2.webp",
+            "img/hogar/olla/olla3.webp",
+            "img/hogar/olla/olla4.webp",
+            "img/hogar/olla/olla5.webp",
+            "img/hogar/olla/olla6.webp",
+            "img/hogar/olla/olla7.webp",
+            "img/hogar/olla/olla8.webp"
         ]
     },
     {
@@ -1313,7 +1313,7 @@ function renderProducts() {
 
         const hasDiscount = product.precio && product.precio > product.descuento;
         const descuentoDisplay = hasDiscount ?
-            `<span class="text-sm text-gray-500 line-through mr-2">
+            `<span class="text-sm text-red-500 line-through mr-2">
                 ${new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(product.precio)}
             </span>
             <span class="text-lg sm:text-xl font-bold text-purple-600">
@@ -1351,7 +1351,7 @@ function renderProducts() {
     <div>
         ${descuentoDisplay}
     </div>
-    <button class="w-full sm:w-auto bg-purple-600 text-white px-4 py-2 sm:px-2 sm:py-1 rounded-md hover:bg-purple-400 transition duration-300 text-base sm:text-xs font-medium view-details-btn">
+    <button class="w-full sm:w-auto bg-purple-600 text-white px-4 py-2 sm:px-2 sm:py-1 rounded-md hover:bg-purple-900 transition duration-300 text-base sm:text-xs font-medium view-details-btn">
         Ver Detalles
     </button>
 </div>
@@ -1432,7 +1432,7 @@ function openProductModal(data) {
     if (hasDiscount) {
         modalProductPrice.innerHTML = `
         <div class="flex flex-col">
-            <span class="text-sm text-gray-500 line-through mb-1">
+            <span class="text-sm text-red-500 line-through mb-1">
                 ${new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(data.precio)}
             </span>
             <span class="text-2xl font-bold text-purple-600">
@@ -1492,7 +1492,7 @@ function openItemModal(data) {
     const hasDiscount = data.precio && data.precio > data.descuento;
     if (hasDiscount) {
         modalItemPrice.innerHTML = `
-            <span class="text-sm text-gray-500 line-through mr-2">
+            <span class="text-sm text-red-500 line-through mr-2">
                 ${new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(data.precio)}
             </span>
             <span class="text-2xl font-bold text-purple-600">
