@@ -173,7 +173,8 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="contac text-4xl font-bold mb-4">Contáctanos</h2>
-                <p class="ticon text-xl text-gray-300 max-w-2xl mx-auto">¿Tienes alguna pregunta? <br> o <br> ¿requiere de algun
+                <p class="ticon text-xl text-gray-300 max-w-2xl mx-auto">¿Tienes alguna pregunta? <br> o <br> ¿requiere
+                    de algun
                     producto nuevo? <br> Escríbenos y te responderemos lo antes posible</p>
             </div>
 
@@ -224,14 +225,14 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6">Categorías</h4>
                     <ul class="space-y-3">
-                        <li><a href="/catalogo.html?category=tecnologia" class="text-gray-400 hover:text-white"><i
-                                    class="fas fa-microchip mr-2"></i>Tecnología</a></li>
-                        <li><a href="/catalogo.html?category=hogar" class="text-gray-400 hover:text-white"><i
-                                    class="fas fa-home mr-2"></i>Hogar</a></li>
-                        <li><a href="/catalogo.html?category=cursos" class="text-gray-400 hover:text-white"><i
-                                    class="fas fa-graduation-cap mr-2"></i>Cursos</a></li>
-                        <li><a href="/catalogo.html?category=moda" class="text-gray-400 hover:text-white"><i
-                                    class="fas fa-dumbbell mr-2"></i>Moda</a></li>
+                        <li><a href="index.html?category=tecnologia" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-microchip mr-2 text-white"></i>Tecnología</a></li>
+                        <li><a href="index.html?category=hogar" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-home mr-2 text-white"></i>Hogar</a></li>
+                        <li><a href="index.html?category=cursos" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-graduation-cap mr-2 text-white"></i>Cursos</a></li>
+                        <li><a href="index.html?category=moda" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-tshirt mr-2 text-white"></i>Moda</a></li>
                     </ul>
                 </div>
 
@@ -245,42 +246,51 @@
                     </ul>
                 </div> -->
 
+                <!-- Contacto -->
                 <div>
                     <h4 class="text-lg font-semibold mb-6">Contacto</h4>
                     <ul class="space-y-3">
-                        <li class="text-gray-400"><i class="fas fa-envelope mr-2"></i> bazzarioshop@gmail.com</li>
-                        <li class="text-gray-400"><i class="fas fa-phone mr-2"></i> +57 3143152243</li>
-                        <li class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i>Colombia</li>
+                        <li><a href="mailto:bazzarioshop@gmail.com" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-envelope mr-2 text-white"></i>bazzarioshop@gmail.com</a></li>
+                        <li><a href="tel:+573053030303" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-phone mr-2 text-white"></i>+57 305 303 0303</a></li>
+                        <li><a href="https://goo.gl/maps/..." target="_blank" class="text-gray-400 hover:text-white">
+                                <i class="fas fa-map-marker-alt mr-2 text-white"></i>Calle 123, Ciudad, País</a></li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>© 2025 Bazzario-shop. Todos los derechos reservados.</p>
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                    <p>© <span id="currentYear"></span> Bazzario-shop. Todos los derechos reservados.</p>
+                </div>
+
             </div>
-        </div>
     </footer>
 
-        <!-- Product Modal -->
+    <!-- Product Modal -->
     <div id="productModal" class="modal">
         <div class="modal-content">
             <span class="modal-close-btn" id="closeProductModal">&times;</span>
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/2">
-                    <h3 id="modalProductName" class="text-2xl font-bold text-gray-800 mb-3 text-center md:text-left"></h3>
-                    <img id="modalProductMainImage" src="" alt="Product Image" class="w-full h-48 sm:h-64 object-contain rounded-lg mb-4">
+                    <h3 id="modalProductName" class="text-2xl font-bold text-gray-800 mb-3 text-center md:text-left">
+                    </h3>
+                    <img id="modalProductMainImage" src="" alt="Product Image"
+                        class="w-full h-48 sm:h-64 object-contain rounded-lg mb-4">
                     <div class="flex items-center justify-center gap-2 mb-4">
-                        <button id="prev-product-thumb-btn" class="modal-thumb-arrow hidden"><i class="fas fa-chevron-left"></i></button>
+                        <button id="prev-product-thumb-btn" class="modal-thumb-arrow hidden"><i
+                                class="fas fa-chevron-left"></i></button>
                         <div id="modalProductImagesThumbnails" class="modal-thumbnails-wrapper">
                             <div id="product-thumbnail-list" class="modal-thumbnail-list">
                                 <!-- Product Thumbnails will be inserted here -->
                             </div>
                         </div>
-                        <button id="next-product-thumb-btn" class="modal-thumb-arrow hidden"><i class="fas fa-chevron-right"></i></button>
+                        <button id="next-product-thumb-btn" class="modal-thumb-arrow hidden"><i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
                     <p class="text-lg font-semibold text-gray-700 mb-2">Precio:</p>
                     <p id="modalProductPrice" class="text-2xl font-bold text-purple-600 mb-6"></p>
-                    <button id="contactProductBtn" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 w-full mb-6">
+                    <button id="contactProductBtn"
+                        class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 w-full mb-6">
                         <i class="fab fa-whatsapp mr-2"></i> Contactar con el proveedor
                     </button>
                 </div>
@@ -293,24 +303,28 @@
         </div>
     </div>
 
-        <!-- Item (Course) Modal -->
+    <!-- Item (Course) Modal -->
     <div id="itemModal" class="modal">
         <div class="modal-content">
             <span class="modal-close-btn" id="closeItemModal">&times;</span>
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/2">
                     <h3 id="modalItemName" class="text-2xl font-bold text-gray-800 mb-3 text-center md:text-left"></h3>
-                    <img id="modalItemMainImage" src="" alt="Item Image" class="w-full h-48 sm:h-64 object-contain rounded-lg mb-4">
+                    <img id="modalItemMainImage" src="" alt="Item Image"
+                        class="w-full h-48 sm:h-64 object-contain rounded-lg mb-4">
                     <div class="flex items-center justify-center gap-2 mb-4">
-                        <button id="prev-item-thumb-btn" class="modal-thumb-arrow hidden"><i class="fas fa-chevron-left"></i></button>
+                        <button id="prev-item-thumb-btn" class="modal-thumb-arrow hidden"><i
+                                class="fas fa-chevron-left"></i></button>
                         <div id="modalItemImagesThumbnails" class="modal-thumbnails-wrapper">
                             <div id="item-thumbnail-list" class="modal-thumbnail-list">
                                 <!-- Item Thumbnails will be inserted here -->
                             </div>
                         </div>
-                        <button id="next-item-thumb-btn" class="modal-thumb-arrow hidden"><i class="fas fa-chevron-right"></i></button>
+                        <button id="next-item-thumb-btn" class="modal-thumb-arrow hidden"><i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
-                    <p class="text-gray-600 text-sm mb-2"><span id="modalItemType" class="font-semibold"></span>: <span id="modalItemDurationPages"></span></p>
+                    <p class="text-gray-600 text-sm mb-2"><span id="modalItemType" class="font-semibold"></span>: <span
+                            id="modalItemDurationPages"></span></p>
                     <div class="flex items-center mb-6">
                         <div id="modalItemRating" class="flex text-yellow-400"></div>
                         <span id="modalItemRatingValue" class="ml-2 text-sm text-gray-600"></span>
@@ -318,16 +332,19 @@
                     <p class="text-lg font-semibold text-gray-700 mb-2">Precio:</p>
                     <p id="modalItemPrice" class="text-2xl font-bold text-red-600 mb-6"></p>
                     <!-- Botones en itemModal -->
-                    <a id="viewCourseBtn" href="#" target="_blank" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300 w-full mb-4 text-center">
+                    <a id="viewCourseBtn" href="#" target="_blank"
+                        class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300 w-full mb-4 text-center">
                         <i class="fas fa-external-link-alt mr-2"></i> Ver Curso
                     </a>
 
                     <!-- Contenedor para separar botones Contactar y Comprar -->
                     <div class="flex flex-col gap-4">
-                        <button id="contactItemBtn" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 w-full">
+                        <button id="contactItemBtn"
+                            class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 w-full">
                             <i class="fab fa-whatsapp mr-2"></i> Contactar con el proveedor
                         </button>
-                        <a id="buyCourseBtn" href="#" target="_blank" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300 w-full text-center">
+                        <a id="buyCourseBtn" href="#" target="_blank"
+                            class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300 w-full text-center">
                             <i class="fas fa-shopping-cart mr-2"></i> Comprar Curso
                         </a>
                     </div>
@@ -341,26 +358,27 @@
         </div>
     </div>
 
-        <!-- Modal personalizada para el recordatorio -->
-        <div id="customReminderModal"
-            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-            <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 text-center">
-                <h3 class="text-xl font-bold mb-4 text-purple-700">¡Importante!</h3>
-                <p class="mb-6 text-gray-700">Recuerda comprar el curso en esta misma página
-                    <strong>BAZZARIO-SHOP</strong> para que así obtengas los descuentos únicos.</p>
-                <div class="flex justify-center gap-4">
-                    <button id="reminderCancelBtn"
-                        class="px-6 py-2 rounded bg-gray-300 hover:bg-gray-400 transition font-semibold">Cancelar</button>
-                    <button id="reminderOkBtn"
-                        class="px-6 py-2 rounded bg-purple-600 text-white hover:bg-purple-700 transition font-semibold">Aceptar</button>
-                </div>
+    <!-- Modal personalizada para el recordatorio -->
+    <div id="customReminderModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 text-center">
+            <h3 class="text-xl font-bold mb-4 text-purple-700">¡Importante!</h3>
+            <p class="mb-6 text-gray-700">Recuerda comprar el curso en esta misma página
+                <strong>BAZZARIO-SHOP</strong> para que así obtengas los descuentos únicos.
+            </p>
+            <div class="flex justify-center gap-4">
+                <button id="reminderCancelBtn"
+                    class="px-6 py-2 rounded bg-gray-300 hover:bg-gray-400 transition font-semibold">Cancelar</button>
+                <button id="reminderOkBtn"
+                    class="px-6 py-2 rounded bg-purple-600 text-white hover:bg-purple-700 transition font-semibold">Aceptar</button>
             </div>
         </div>
+    </div>
 
-        <script src="/js/script.js"></script>
-        <!-- Librería para notificaciones Toastify-JS -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Librería para notificaciones Toastify-JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

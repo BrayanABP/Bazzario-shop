@@ -1601,6 +1601,14 @@ function renderThumbnails(modalType, images) {
     navigateThumbnails(modalType, 0); // Initialize position and arrow visibility
 }
 
+// Actualizar el año en el pie de página
+document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+});
+
+
 function navigateThumbnails(modalType, direction) {
     const thumbnailListElement = modalType === 'product' ? productThumbnailList : itemThumbnailList;
     const totalThumbnails = thumbnailListElement.children.length;
