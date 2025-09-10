@@ -276,17 +276,17 @@ La máquina Adopta un motor silencioso y un motor de baja frecuencia, lo que red
     },
 
     {
-        id: 11, name: "Microfono Condensador Profesional Bm80",
+        id: 11, name: "Microfono Condensador Profesional Bm800",
         precio: 140000,
         descuento: 120000,
         category: "tecnologia",
         image: "img/tecnologia/micro/micro1.webp",
-        description: "kit de micrófono de condensador USB BM80 con brazo flexible",
-        detailedDescription: `Micrófono de condensador USB BM80 con brazo flexible para grabaciones profesionales y domésticas.
+        description: "kit de micrófono de condensador USB BM800 con brazo flexible",
+        detailedDescription: `Micrófono de condensador USB BM800 con brazo flexible para grabaciones profesionales y domésticas.
         
         Su calidad de audio alcanza una frecuencia de muestreo de hasta 48 kHz / 16 bits, garantizando un sonido nítido y sin interferencias, ideal para streaming, podcasts, doblajes, música, entrevistas, videoconferencias y grabaciones en estudio o en casa.
         
-*Marca / Modelo: BM80
+*Marca / Modelo: BM800
 *Fuente de alimentación: USB
 *Direccionalidad: Unidireccional (cardioide)
 *Sensibilidad: -42 ± 3 dB (1,5 V, 680 KΩ; 0 dB = 1V/Pa a 1 kHz)
